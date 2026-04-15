@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+ברוכים הבאים לחנות בגדי ים אונליין של Popa culo — המותג שמגדיר מחדש את האופנה הימית בישראל. עיצובים נועזים, בדים איכותיים וסטייל שאי אפשר להתעלם ממנו. קני עכשיו!
+
+### סיפור המותג
+https://example.com/brand-story
+גלי את הסיפור שמאחורי Popa culo — מותג בגדי הים שנבנה מתוך תשוקה לאופנה, לים ולזהות ייחודית. כל תפר מספר סיפור. היכנסי וגלי מאיפה הכל התחיל!
+
+### לוקבוק
+https://example.com/lookbook
+קולקציית הלוקבוק של Popa culo כאן! צלילה עמוקה לתוך עיצובים אופנתיים, צבעים עזים ובגדי ים שנועדו להרשים. השראה לסטייל ימי שלא ראית כמותו — חנות בגדי ים אופנתיים מחכה לך!
+
+### צור קשר
+https://example.com/contact
+יש שאלות? רוצה לדעת עוד על בגדי ים אונליין ישראל של Popa culo? צרי איתנו קשר עכשיו ונחזור אלייך במהירות הבזק. שירות אישי, חם ומקצועי — כי את מגיעה לכלום פחות!
+
+### Products
+https://example.com/products
+המוצרים שלנו - Popa culo
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - Popa culo
+
+### Category
+https://example.com/category/:slug
+מוצרים - Popa culo
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
