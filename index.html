@@ -490,94 +490,196 @@
 }
 </style>
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-features-section {
   background-color: #F8F2E8;
   background-image:
-    radial-gradient(rgba(210,180,140,0.12) 0.8px, transparent 0.8px),
-    radial-gradient(rgba(210,180,140,0.08) 0.8px, #F8F2E8 0.8px);
-  background-size: 16px 16px, 16px 16px;
-  background-position: 0 0, 8px 8px;
+    radial-gradient(circle at 10% 80%, rgba(210,180,140,0.13) 0%, transparent 55%),
+    radial-gradient(circle at 90% 15%, rgba(195,110,71,0.07) 0%, transparent 45%),
+    linear-gradient(180deg, #FBF7F0 0%, #F4EBDD 100%);
   color: var(--text-dark);
-  padding: 80px 24px 72px;
-  direction: rtl;
+  padding: 100px 24px 80px;
   position: relative;
   overflow: visible;
-  font-family: 'Manrope', sans-serif;
+  direction: rtl;
 }
 
-.index-features-section .index-features-container {
+.index-features-section .index-features-inner {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
+  position: relative;
+  z-index: 1;
 }
 
-.index-features-section .index-features-label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+/* ── Header ── */
+.index-features-section .index-features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.index-features-section .index-features-eyebrow {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
-  text-align: center;
-  margin-bottom: 16px;
+  background: rgba(199, 107, 79, 0.09);
+  border: 1px solid rgba(199, 107, 79, 0.22);
+  border-radius: 999px;
+  padding: 6px 20px;
+  margin-bottom: 20px;
 }
 
-.index-features-section .index-features-heading {
-  font-family: 'Cormorant Garamond', 'Manrope', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+.index-features-section .index-features-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  color: #7A5A46;
+  color: var(--text-dark);
+  margin: 0;
+  max-width: none !important;
   text-align: center;
-  margin: 0 0 56px;
-  max-width: 680px;
 }
 
-.index-features-section .index-features-heading em {
+.index-features-section .index-features-title em {
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  color: var(--accent);
+  font-weight: 500;
+  color: #7A5A46;
 }
 
-.index-features-section .index-features-grid {
+/* ── Body Layout ── */
+.index-features-section .index-features-body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  width: 100%;
-  margin-bottom: 56px;
+  grid-template-columns: 1fr 1.55fr;
+  gap: 56px;
+  align-items: start;
   direction: rtl;
 }
 
+/* ── Image Panel ── */
+.index-features-section .index-features-image-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.index-features-section .index-features-image-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(110,75,56,0.18);
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+.index-features-section .index-features-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.index-features-section .index-features-image-badge {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(248,242,232,0.88);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(230,216,200,0.75);
+  border-radius: 14px;
+  padding: 14px 20px;
+  text-align: right;
+  box-shadow: 0 8px 24px rgba(110,75,56,0.12);
+}
+
+.index-features-section .index-features-image-badge .badge-line {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text-dark);
+  letter-spacing: 0.01em;
+}
+
+.index-features-section .index-features-image-badge .badge-line--accent {
+  color: var(--accent);
+}
+
+.index-features-section .index-features-image-dot-grid {
+  position: absolute;
+  bottom: -28px;
+  left: -28px;
+  width: 110px;
+  height: 110px;
+  background-image:
+    radial-gradient(circle, rgba(199,107,79,0.28) 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+  border-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Feature Grid ── */
+.index-features-section .index-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  direction: rtl;
+}
+
+/* ── Feature Card ── */
 .index-features-section .index-feature-card {
   background: rgba(248,242,232,0.9);
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(110,75,56,0.10);
-  padding: 32px 28px;
   border: 1px solid rgba(230,216,200,0.65);
-  backdrop-filter: blur(2px);
+  box-shadow: 0 8px 24px rgba(110,75,56,0.08);
+  padding: 26px 22px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 16px;
-  text-align: right;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  gap: 12px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.index-features-section .index-feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent));
+  border-radius: 0 16px 0 0;
+  opacity: 0;
+  transition: opacity 0.22s ease;
 }
 
 .index-features-section .index-feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 44px rgba(110,75,56,0.18);
+  box-shadow: 0 18px 44px rgba(110,75,56,0.16);
+}
+
+.index-features-section .index-feature-card:hover::before {
+  opacity: 1;
 }
 
 .index-features-section .index-feature-icon-wrap {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #EFDCC7 0%, #F8F2E8 100%);
-  border: 1px solid rgba(230,216,200,0.85);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(199,107,79,0.13) 0%, rgba(226,209,187,0.25) 100%);
+  border: 1px solid rgba(199,107,79,0.18);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,95 +690,90 @@
 .index-features-section .index-feature-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 100%;
+  gap: 6px;
 }
 
 .index-features-section .index-feature-content h3 {
   font-family: 'Manrope', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  line-height: 1.3;
-  color: #7A5A46;
+  line-height: 1.35;
+  color: var(--text-dark);
   margin: 0;
   text-align: right;
 }
 
 .index-features-section .index-feature-content p {
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.65;
   color: #8F6B55;
   margin: 0;
   text-align: right;
 }
 
-.index-features-section .index-features-image-wrap {
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(110,75,56,0.12);
-  border: 1px solid rgba(230,216,200,0.65);
-  position: relative;
-}
-
-.index-features-section .index-features-image-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(46,41,37,0.18) 0%, transparent 40%, transparent 60%, rgba(46,41,37,0.12) 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.index-features-section .index-features-image-wrap img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.index-features-section .index-features-image-wrap:hover img {
-  transform: scale(1.02);
-}
-
-@media (max-width: 1024px) {
-  .index-features-section .index-features-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* ── Responsive: Tablet ── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .index-features-section .index-features-body {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 36px;
+  }
+  .index-features-section .index-features-title {
+    font-size: 2.1rem;
   }
 }
 
+/* ── Responsive: Mobile ── */
 @media (max-width: 768px) {
   .index-features-section {
-    padding: 60px 16px 48px;
+    padding: 100px 16px 60px;
   }
 
-  .index-features-section .index-features-heading {
-    font-size: 1.75rem;
+  .index-features-section .index-features-header {
     margin-bottom: 36px;
+  }
+
+  .index-features-section .index-features-title {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  .index-features-section .index-features-body {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .index-features-section .index-features-image-panel {
+    align-items: center;
+  }
+
+  .index-features-section .index-features-image-wrap {
+    max-width: 340px;
+    margin: 0 auto;
+    aspect-ratio: 4/5;
+  }
+
+  .index-features-section .index-features-image-dot-grid {
+    display: none;
   }
 
   .index-features-section .index-features-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px;
-    margin-bottom: 36px;
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .index-features-section .index-feature-card {
-    padding: 24px 20px;
+    padding: 20px 18px;
     flex-direction: row;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
   }
 
   .index-features-section .index-feature-icon-wrap {
-    width: 48px;
-    height: 48px;
     flex-shrink: 0;
-  }
-
-  .index-features-section .index-features-image-wrap img {
-    height: 200px;
+    width: 42px;
+    height: 42px;
   }
 }
 </style>
@@ -1273,68 +1370,94 @@
   <main>
     
 
-    <section class="index-features-section" data-layout-spec="בית-features" dir="rtl" data-zappy-section="true" id="featured-products">
-  <div class="index-features-container">
-    <div class="index-features-label">הייחודיות שלנו</div>
-    <h2 class="index-features-heading">בגדי ים בעיצוב אישי שנתפרים<br><em>בדיוק בשבילך</em></h2>
-    <div class="index-features-grid">
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>עיצוב שמחמיא לגוף</h3>
-          <p>כל דגם מעוצב תוך הקפדה על קווים שמחמיאים לכל סוגי הגוף, ומעניקים ביטחון ויופי טבעי.</p>
-        </div>
-      </article>
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>בדים איכותיים ועמידים</h3>
-          <p>אנו בוחרים בדים פרמיום עמידים בפני כלור, מלח ושמש — כדי שתיראי מושלמת לאורך כל הקיץ.</p>
-        </div>
-      </article>
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>התאמה אישית מלאה</h3>
-          <p>בחרי מידה, צבע ואפשרויות עיצוב שיתאימו בדיוק לסגנון האישי שלך — כי כל אחת ייחודית.</p>
-        </div>
-      </article>
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"></rect><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"></path><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>משלוח מהיר לכל הארץ</h3>
-          <p>הזמיני מהנוחות של הבית ותקבלי את הפריט שלך עד הדלת — מהר, בטוח ובאריזה מקסימה.</p>
-        </div>
-      </article>
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>תשלום מאובטח</h3>
-          <p>מערכת תשלומים מוצפנת ומאובטחת לחלוטין — קנייה בטוחה ורגועה בכל שלב.</p>
-        </div>
-      </article>
-      <article class="index-feature-card">
-        <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        </div>
-        <div class="index-feature-content">
-          <h3>שירות לקוחות אישי</h3>
-          <p>צוות מסור שעומד לרשותך לייעוץ מידות, הכוונת סגנון ומענה לכל שאלה — כי את לא לבד.</p>
-        </div>
-      </article>
+    <section class="index-features-section" dir="rtl" data-layout-spec="בית-features" data-zappy-section="true" id="featured-products">
+  <div class="index-features-inner">
+
+    <!-- Section Label + Heading -->
+    <div class="index-features-header">
+      <span class="index-features-eyebrow">הייחודיות שלנו</span>
+      <h2 class="index-features-title">בגדי ים בעיצוב אישי שנתפרים<br><em>בדיוק בשבילך</em></h2>
     </div>
-    <div class="index-features-image-wrap">
-      <img data-placeholder="index-features-image-1" data-context="A close-up editorial flat-lay of premium swimwear fabrics in warm sand, terracotta and ivory tones, arranged artfully on a natural linen surface with a few dried flowers and a delicate gold pin. Soft natural light, luxury boutique fashion mood." width="1100" height="320" src="" alt="בגדי ים בעיצוב אישי של Popa culo — בדים איכותיים בגוונים חמים" style="object-fit: cover; object-position: center;">
+
+    <!-- Main Layout: Image + Cards -->
+    <div class="index-features-body">
+
+      <!-- Left: Image Panel -->
+      <div class="index-features-image-panel">
+        <div class="index-features-image-wrap">
+          <img alt="בגדי ים בעיצוב אישי של Popa culo — בדים איכותיים בגוונים חמים" class="index-features-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3Eindex-features-image-1%3C/text%3E%3C/svg%3E" data-placeholder="index-features-image-1" data-context="A close-up editorial flat-lay of premium swimwear fabrics in warm sand, terracotta and ivory tones, arranged artfully on a natural linen surface with a few dried flowers and a delicate gold pin. Soft natural light, luxury boutique fashion mood." style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          <div class="index-features-image-badge">
+            <span class="badge-line">עיצוב</span>
+            <span class="badge-line badge-line--accent">אישי</span>
+          </div>
+        </div>
+        <div class="index-features-image-dot-grid" aria-hidden="true"></div>
+      </div>
+
+      <!-- Right: Feature Grid -->
+      <div class="index-features-grid">
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>עיצוב שמחמיא לגוף</h3>
+            <p>כל דגם מעוצב תוך הקפדה על קווים שמחמיאים לכל סוגי הגוף, ומעניקים ביטחון ויופי טבעי.</p>
+          </div>
+        </article>
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>בדים איכותיים ועמידים</h3>
+            <p>אנו בוחרים בדים פרמיום עמידים בפני כלור, מלח ושמש — כדי שתיראי מושלמת לאורך כל הקיץ.</p>
+          </div>
+        </article>
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>התאמה אישית מלאה</h3>
+            <p>בחרי מידה, צבע ואפשרויות עיצוב שיתאימו בדיוק לסגנון האישי שלך — כי כל אחת ייחודית.</p>
+          </div>
+        </article>
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"></rect><path d="M16 8h4l3 3v4h-7V8z"></path><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>משלוח מהיר לכל הארץ</h3>
+            <p>הזמיני מהנוחות של הבית ותקבלי את הפריט שלך עד הדלת — מהר, בטוח ובאריזה מקסימה.</p>
+          </div>
+        </article>
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>תשלום מאובטח</h3>
+            <p>מערכת תשלומים מוצפנת ומאובטחת לחלוטין — קנייה בטוחה ורגועה בכל שלב.</p>
+          </div>
+        </article>
+
+        <article class="index-feature-card">
+          <div class="index-feature-icon-wrap">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
+          </div>
+          <div class="index-feature-content">
+            <h3>שירות לקוחות אישי</h3>
+            <p>צוות מסור שעומד לרשותך לייעוץ מידות, הכוונת סגנון ומענה לכל שאלה — כי את לא לבד.</p>
+          </div>
+        </article>
+
+      </div>
     </div>
   </div>
 </section>
