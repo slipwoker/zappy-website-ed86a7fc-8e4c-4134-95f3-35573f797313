@@ -489,6 +489,197 @@
   }
 }
 </style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-features-section {
+  background-color: #F8F2E8;
+  background-image:
+    radial-gradient(rgba(210,180,140,0.12) 0.8px, transparent 0.8px),
+    radial-gradient(rgba(210,180,140,0.08) 0.8px, #F8F2E8 0.8px);
+  background-size: 16px 16px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+  color: var(--text-dark);
+  padding: 80px 24px 72px;
+  direction: rtl;
+  position: relative;
+  overflow: visible;
+  font-family: 'Manrope', sans-serif;
+}
+
+.index-features-section .index-features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.index-features-section .index-features-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.index-features-section .index-features-heading {
+  font-family: 'Cormorant Garamond', 'Manrope', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #7A5A46;
+  text-align: center;
+  margin: 0 0 56px;
+  max-width: 680px;
+}
+
+.index-features-section .index-features-heading em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.index-features-section .index-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 56px;
+  direction: rtl;
+}
+
+.index-features-section .index-feature-card {
+  background: rgba(248,242,232,0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(110,75,56,0.10);
+  padding: 32px 28px;
+  border: 1px solid rgba(230,216,200,0.65);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  text-align: right;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.index-features-section .index-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 44px rgba(110,75,56,0.18);
+}
+
+.index-features-section .index-feature-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #EFDCC7 0%, #F8F2E8 100%);
+  border: 1px solid rgba(230,216,200,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.index-features-section .index-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.index-features-section .index-feature-content h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #7A5A46;
+  margin: 0;
+  text-align: right;
+}
+
+.index-features-section .index-feature-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #8F6B55;
+  margin: 0;
+  text-align: right;
+}
+
+.index-features-section .index-features-image-wrap {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(110,75,56,0.12);
+  border: 1px solid rgba(230,216,200,0.65);
+  position: relative;
+}
+
+.index-features-section .index-features-image-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(46,41,37,0.18) 0%, transparent 40%, transparent 60%, rgba(46,41,37,0.12) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.index-features-section .index-features-image-wrap img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.index-features-section .index-features-image-wrap:hover img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+  .index-features-section .index-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .index-features-section {
+    padding: 60px 16px 48px;
+  }
+
+  .index-features-section .index-features-heading {
+    font-size: 1.75rem;
+    margin-bottom: 36px;
+  }
+
+  .index-features-section .index-features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .index-features-section .index-feature-card {
+    padding: 24px 20px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .index-features-section .index-feature-icon-wrap {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .index-features-section .index-features-image-wrap img {
+    height: 200px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -1082,17 +1273,71 @@
   <main>
     
 
-    <section class="featured-products-section" id="featured-products" data-zappy-dynamic="true">
-      <div class="container">
-        <h2 class="section-title">מוצרים מומלצים</h2>
-        <div class="product-grid featured-grid" id="zappy-featured-products">
-          <div class="loading-products">טוען מוצרים...</div>
+    <section class="index-features-section" data-layout-spec="בית-features" dir="rtl" data-zappy-section="true" id="featured-products">
+  <div class="index-features-container">
+    <div class="index-features-label">הייחודיות שלנו</div>
+    <h2 class="index-features-heading">בגדי ים בעיצוב אישי שנתפרים<br><em>בדיוק בשבילך</em></h2>
+    <div class="index-features-grid">
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
         </div>
-        <div class="view-all-products">
-          <a href="/products" class="btn btn-primary">צפה בכל המוצרים →</a>
+        <div class="index-feature-content">
+          <h3>עיצוב שמחמיא לגוף</h3>
+          <p>כל דגם מעוצב תוך הקפדה על קווים שמחמיאים לכל סוגי הגוף, ומעניקים ביטחון ויופי טבעי.</p>
         </div>
-      </div>
-    </section>
+      </article>
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </div>
+        <div class="index-feature-content">
+          <h3>בדים איכותיים ועמידים</h3>
+          <p>אנו בוחרים בדים פרמיום עמידים בפני כלור, מלח ושמש — כדי שתיראי מושלמת לאורך כל הקיץ.</p>
+        </div>
+      </article>
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
+        </div>
+        <div class="index-feature-content">
+          <h3>התאמה אישית מלאה</h3>
+          <p>בחרי מידה, צבע ואפשרויות עיצוב שיתאימו בדיוק לסגנון האישי שלך — כי כל אחת ייחודית.</p>
+        </div>
+      </article>
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"></rect><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"></path><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </div>
+        <div class="index-feature-content">
+          <h3>משלוח מהיר לכל הארץ</h3>
+          <p>הזמיני מהנוחות של הבית ותקבלי את הפריט שלך עד הדלת — מהר, בטוח ובאריזה מקסימה.</p>
+        </div>
+      </article>
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div class="index-feature-content">
+          <h3>תשלום מאובטח</h3>
+          <p>מערכת תשלומים מוצפנת ומאובטחת לחלוטין — קנייה בטוחה ורגועה בכל שלב.</p>
+        </div>
+      </article>
+      <article class="index-feature-card">
+        <div class="index-feature-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <div class="index-feature-content">
+          <h3>שירות לקוחות אישי</h3>
+          <p>צוות מסור שעומד לרשותך לייעוץ מידות, הכוונת סגנון ומענה לכל שאלה — כי את לא לבד.</p>
+        </div>
+      </article>
+    </div>
+    <div class="index-features-image-wrap">
+      <img data-placeholder="index-features-image-1" data-context="A close-up editorial flat-lay of premium swimwear fabrics in warm sand, terracotta and ivory tones, arranged artfully on a natural linen surface with a few dried flowers and a delicate gold pin. Soft natural light, luxury boutique fashion mood." width="1100" height="320" src="" alt="בגדי ים בעיצוב אישי של Popa culo — בדים איכותיים בגוונים חמים" style="object-fit: cover; object-position: center;">
+    </div>
+  </div>
+</section>
   
 
     <section class="featured-categories-section" id="featured-categories" data-zappy-dynamic="true">
